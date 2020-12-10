@@ -118,6 +118,8 @@
         padding: 1em;
         background-color: #130f40;
         color: white;
+        display: flex;
+        justify-content: center;
       }
 
       .footer {
@@ -127,14 +129,38 @@
       }
 
       .event-join {
-        text-align: center;
-        font-size: 1.25em;
+        padding: 1em;
+        border-radius: 1em;
+        line-height: 2;
+        font-size: 1.5em;
         font-weight: 100;
+        color: white;
+        display: inline-block;
       }
 
       .event-add-to-calendar {
         text-align: center;
         margin-top: 1em;
+      }
+
+      .event-zoom-small {
+        font-size: 0.75em;
+      }
+
+      a:link, a:visited {
+        color: white;
+      }
+
+      a:hover {
+        opacity: 0.75;
+      }
+
+      a:active {
+        opacity: 0.25;
+      }
+
+      .footer > a {
+        color: #130f40;
       }
     </style>
   </head>
@@ -189,17 +215,28 @@
 
       <div class="event-how">
         <div class="event-join">
-          Zoom link details to be posted here soon. In the meantime, feel free to add the event to your calendar!
-        </div>
-        <div class="event-add-to-calendar">
-          <div title="Add to Calendar" class="addeventatc">
-            Add to Calendar
-            <span class="start">12/22/2020 07:00 PM</span>
-            <span class="end">12/22/2020 08:30 PM</span>
-            <span class="timezone">America/Toronto</span>
-            <span class="title">Introspective Code - Lightning Talks</span>
-            <span class="description">10 Minute Lightning Talks By Talented Developers From The Introspective Code Community</span>
-            <span class="location">Zoom Call</span>
+          <a href="https://nulogy.zoom.us/j/96661131354">Join Zoom Meeting</a>
+          <br>
+          Meeting ID: <strong>966 6113 1354</strong><br>
+          <a class="event-zoom-small" href="https://nulogy.zoom.us/u/acFzozZoQm">Find your local number.</a>
+          <div class="event-add-to-calendar">
+            <div title="Add to Calendar" class="addeventatc">
+              Add to Calendar
+              <span class="start">12/22/2020 07:00 PM</span>
+              <span class="end">12/22/2020 08:30 PM</span>
+              <span class="timezone">America/Toronto</span>
+              <span class="title">Introspective Code - Lightning Talks</span>
+              <span class="description">
+                10 Minute Lightning Talks By Talented Developers From The Introspective Code Community
+
+                Join Zoom Meeting
+                https://nulogy.zoom.us/j/96661131354
+
+                Meeting ID: 966 6113 1354
+                Find your local number: https://nulogy.zoom.us/u/acFzozZoQm
+              </span>
+              <span class="location">Zoom Call</span>
+            </div>
           </div>
         </div>
       </div>
